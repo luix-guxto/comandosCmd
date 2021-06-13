@@ -1,9 +1,9 @@
-@if "%2"=="" goto error
-@if "%3"=="" goto remote
+@if "%1"=="" goto error
+@if "%2"=="" goto remote
 @goto error
 
 :remote
-@git remote add origin %2
+@git remote add origin %1
 @goto fim
 
 :error
